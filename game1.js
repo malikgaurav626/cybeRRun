@@ -1,3 +1,12 @@
+
+function loadFont() {
+  const font = new FontFace("micky", "url('Micky\ Dicky.ttf')");
+
+  return font.load().then((loadedFont) => {
+    document.fonts.add(loadedFont);
+  });
+}
+
 const canvas = document.getElementById("canvas-id");
 const context = canvas.getContext("2d");
 let hue = 0;
@@ -387,7 +396,9 @@ for (let i = 0; i < track.width; i++) {
 }
 
 track.draw();
-addText(track.matrix);
+loadFont().then(() => {
+  addText(track.matrix);
+});
 
 let player1 = new Player();
 player1.draw(60, 0);
