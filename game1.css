@@ -1,0 +1,102 @@
+@font-face {
+    font-family: micky;
+    src: url('/Micky\ Dicky.ttf');
+}
+::selection{
+    background-color: white;
+    color: rgb(36, 26, 66);
+}
+body {
+    background-color: rgb(36, 26, 66);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    width: 620px;
+    height: 420px;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow-y: hidden;
+    overflow-x: visible !important;
+    display: flex;
+    align-items: center;
+}
+.container::-webkit-scrollbar {
+    /* width: 4px; Adjust the width of the scrollbar */
+    height: 2px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 245, 224);
+    border-radius: 3px; /* Adjust the border radius of the thumb */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(36, 26, 66, 0);
+}
+.canvas{
+    width: 2400px;
+    height: 400px;
+    background-color: rgb(41, 41, 88);
+    font-family: micky;
+    font-size: 40px;
+}
+.heading{
+    font-family: micky;
+    font-size: 40px;
+    text-decoration-line: overline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 18px;
+    color: white;
+}
+.subtitle{
+    font-family: micky;
+    font-size: 10px;
+    /* text-decoration-line: overline; */
+    position: absolute;
+    padding: 0px 3px;
+    top: 0;
+    left: 0;
+    margin: 18px;
+    background-color: white;
+    color: rgb(36, 26, 66);
+}
+.controls{
+    font-family: micky;
+    font-size: 30px;
+    text-decoration-line: overline;
+    position: absolute;
+    top: 177px;
+    left: 0;
+    margin: 18px;
+    color: white;
+}
+.sub-controls{
+    font-family: micky;
+    font-size: 25px;
+    text-decoration-line: overline;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    margin: 18px;
+    color: white;
+    line-height: 50px;
+}
+.warning{
+    font-family: micky;
+    font-size: 15px;
+    text-decoration-line: overline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0px 15px;
+    color: white;
+    line-height: 50px;
+}
